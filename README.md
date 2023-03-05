@@ -1,0 +1,2 @@
+# theCase
+justGitFundamentals
