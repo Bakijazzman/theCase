@@ -24,19 +24,18 @@ const validity = function isUserValid(user, pass) {
   for (var i = 0; i < database.length; i++) {
     if (user === database[i].username && pass === database[i].password) {
       return true;
-    } else {
-      // console.log("false")
+    } else {   
+      return false;
     }
   }
-  return false;
 };
-const valid = validity(names, pass);
-const signIn = function myLogin(valid) {
-  if (validity === true) {
+const validitytest = validity(names, pass);
+const signIn = function myLogin(validitytest) {
+  if (validitytest === true) {
     alert("welcome user, we\'ve been expecting you");
     console.log(newsFeed);
   } else {
     alert("invalid username or password");
   }
 };
-signIn();
+signIn(validitytest);
